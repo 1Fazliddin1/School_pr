@@ -18,7 +18,7 @@ schema_view = get_schema_view(
         contact= openapi.Contact(email='omonullayevfazliddin96@gmail.com')
 
     ),
-    public= True,
+    public = True,
     permission_classes=(permissions.AllowAny, ),
 
 )
@@ -32,6 +32,7 @@ urlpatterns = [
     path('api/v1/piar/', include('app_piar.urls')),
     path('api/v1/search/', include('app_search.urls')),
     path('api/v1/teachers/', include('app_teachers.urls')),
+    path('api/v1/pupils/', include('app_pupils.urls')),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0,), name='schema_swagger'),
     path('', schema_view.with_ui('swagger', cache_timeout=0,), name='schema_swagger'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),

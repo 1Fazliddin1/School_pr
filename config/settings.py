@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'app_piar',
     'app_search',
     'app_teachers',
+    'app_pupils',
 ]
 
 REST_FRAMEWORK = {

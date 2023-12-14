@@ -76,9 +76,6 @@ class Vacancy(models.Model):
 class Image(models.Model):
     image = models.ImageField(upload_to='images/gallery')
 
-    def __str__(self):
-        return self.image
-
     class Meta:
         db_table = 'gallery_images'
 
